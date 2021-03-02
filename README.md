@@ -153,7 +153,6 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 
 </details>
 
-***
 
 #### 6、****设置居中为什么推荐transform，而不是marginTop/Left****
 <details>
@@ -170,6 +169,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
     - ******参考链接****** [https://juejin.im/post/6844903753783443463]跟[https://blog.csdn.net/callmeCassie/article/details/89290945]
     ````
 </details>
+
 ***
 
 #### 7、Promise、async有什么区别
@@ -195,19 +195,28 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 <details>
 <summary>答案</summary>
 
-```  参考[https://zhuanlan.zhihu.com/p/75265007]
+```  参考链接
+    - [https://zhuanlan.zhihu.com/p/75265007]
+    - [https://juejin.cn/post/6844904082210045965](https://)
 ```
 
 </details>
+
 ***
 #### 9、call跟apply的区别，哪个性能更好一些？
 <details>
 <summary>答案</summary>
 
-```  参考[https://zhuanlan.zhihu.com/p/75265007]
+```  
+Function.prototype.apply和Function.prototype.call 的作用是一样的，区别在于传入参数的不同；
+第一个参数都是，指定函数体内this的指向；
+第二个参数开始不同，apply是传入带下标的集合，数组或者类数组，apply把它传给函数作为参数，call从第二个开始传入的参数是不固定的，都会传给函数作为参数。
+call比apply的性能要好，平常可以多用call, call传入参数的格式正是内部所需要的格式<a src="https://github.com/noneven/__/issues/6">参考call和apply的性能对比</a>
+
 ```
 
 </details>
+
 ***
 - 答案
 
@@ -217,6 +226,9 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 <summary>答案</summary>
 
 ```  
+  准则：this始终指向调用它的对象
+  参考链接-[https://juejin.cn/post/6844903746984476686#heading-13]
 ```
-
 </details>
+
+***
