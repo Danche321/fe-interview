@@ -157,8 +157,8 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 
 #### 6、****设置居中为什么推荐transform，而不是marginTop/Left****
 <details>
-  <summary>
-    ````
+<summary>答案</summary>
+    ```
      对布局属性进行动画，浏览器需要为每一帧进行重绘并上传到 GPU 中
 
     对合成属性进行动画，浏览器会为元素创建一个独立的复合层，当元素内容没有发生改变，该层就不会被重绘，浏览器会通过重新复合来创建动画帧
@@ -169,15 +169,15 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 
     - ******参考链接****** [https://juejin.im/post/6844903753783443463]跟[https://blog.csdn.net/callmeCassie/article/details/89290945]
     ````
-  </summary>
 </details>
-
+***
 
 #### 7、Promise、async有什么区别
 <details>
 <summary>答案</summary>
 
-```1 promise是ES6，async/await是ES7
+```
+1 promise是ES6，async/await是ES7
 
 2 async/await相对于promise来讲，写法更加优雅
 
@@ -189,7 +189,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 ```
 
 </details>
-
+***
 
 #### 8、解释一下什么是面向对象编程
 <details>
@@ -199,7 +199,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 ```
 
 </details>
-
+***
 #### 9、call跟apply的区别，哪个性能更好一些？
 <details>
 <summary>答案</summary>
@@ -208,7 +208,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 ```
 
 </details>
-
+***
 - 答案
 
 #### 10、this指向
