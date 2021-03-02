@@ -153,6 +153,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 
 </details>
 
+***
 
 #### 6、****设置居中为什么推荐transform，而不是marginTop/Left****
 <details>
@@ -189,6 +190,7 @@ const test1Res = test1.map((key,val) => ++val) // { a: 2, b: 3, c:4 }
 ```
 
 </details>
+
 ***
 
 #### 8、解释一下什么是面向对象编程
@@ -218,7 +220,6 @@ call比apply的性能要好，平常可以多用call, call传入参数的格式�
 </details>
 
 ***
-- 答案
 
 #### 10、this指向
 
