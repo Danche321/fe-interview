@@ -2,11 +2,46 @@
 
 > ## 2021-03-03
 
-#### 15、
+#### 15、判断数据类型有几种方法？
+
+<details>
+<summary>答案</summary>
+
+- **typeof运算符**
+  - 返回数据类型，包含这7种： number、boolean、symbol、string、object、undefined、function
+  - function 返回 function；null返回Object
+  - 能满足基本类型的判断
+
+- **instaceof 运算符**
+  - 用于测试构造函数的prototype属性是否出现在对象的原型链中的任何位置
+  - 能满足引用类型的判断
+
+- **Object.prototype.toString**
+  - 是Object 的原型方法，可以判断所有数据类型
+  - ```javascript
+    console.log(Object.prototype.toString.call(123));    //[object Number]
+    console.log(Object.prototype.toString.call('123'));    //[object String]
+    console.log(Object.prototype.toString.call(undefined));    //[object Undefined]
+    console.log(Object.prototype.toString.call(true));    //[object Boolean]
+    console.log(Object.prototype.toString.call({}));    //[object Object]
+    console.log(Object.prototype.toString.call([]));    //[object Array]
+    console.log(Object.prototype.toString.call(function(){}));    //[object Function]
+    console.log(Object.prototype.toString.call(null));    //[[object Null]]
+    ```
+
+</details>
 
 ***
 
-#### 14、
+#### 14、事件传播的三个阶段是什么？
+
+<details>
+<summary>答案</summary>
+
+- Capturing（捕获） > Target（目标） > Bubbling（冒泡）
+- 在捕获阶段中，事件从祖先元素向下传播到目标元素。当事件达到目标元素后，冒泡才开始。
+
+</details>
 
 ***
 
